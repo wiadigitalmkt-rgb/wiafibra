@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WiaFibra | Sites Pré-Prontos de Alta Conversão para Provedores de Internet</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Plus Jakarta Sans', 'sans-serif'],
+          },
+          colors: {
+            fibra: {
+              dark: '#0B0F19',      // Fundo Dark Tech
+              cardBg: '#111827',    // Card Dark
+              cyan: '#00F2FE',      // Ciano Fibra Óptica
+              cyanHover: '#00D8E4',
+              purple: '#4FACFE',    // Gradiente Auxiliar
+              accent: '#10B981',    // Verde Destaque
+              textMuted: '#94A3B8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0B0F19;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E293B;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body class="bg-fibra-dark text-slate-100 font-sans antialiased selection:bg-fibra-cyan selection:text-fibra-dark">
+
+  <!-- NAVBAR / CABEÇALHO -->
+  <header class="sticky top-0 z-50 bg-fibra-dark/90 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO (WIAFIBRA) -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-fibra-purple to-fibra-cyan flex items-center justify-center text-fibra-dark shadow-lg shadow-fibra-cyan/20">
+          <i data-lucide="wifi" class="w-6 h-6 stroke-[2.5]"></i>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-heading font-extrabold text-xl text-white tracking-tight leading-none">WiaFibra</span>
+          <span class="text-[10px] font-semibold text-fibra-cyan tracking-wider uppercase mt-0.5">Sites para Provedores</span>
+        </div>
+      </a>
+
+      <!-- MENU DE NAVEGAÇÃO -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#modelos" class="hover:text-fibra-cyan transition-colors">Modelos de Sites</a>
+        <a href="#recursos" class="hover:text-fibra-cyan transition-colors">Recursos Essenciais</a>
+        <a href="#como-funciona" class="hover:text-fibra-cyan transition-colors">Como Funciona</a>
+        <a href="#planos" class="hover:text-fibra-cyan transition-colors">Preços</a>
+      </nav>
+
+      <!-- BOTÕES CTA -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/seu-numero" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold text-fibra-dark bg-fibra-cyan hover:bg-fibra-cyanHover shadow-lg shadow-fibra-cyan/25 transition-all transform hover:-translate-y-0.5">
+          <i data-lucide="message-circle" class="w-4 h-4 fill-current"></i> Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION SIDE-BY-SIDE -->
+  <section class="relative pt-12 pb-20 md:pt-16 md:pb-24 overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-fibra-dark to-fibra-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- COLUNA ESQUERDA: TEXTO -->
+        <div class="lg:col-span-5 space-y-6 text-left">
+          
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-fibra-cyan/10 border border-fibra-cyan/20 text-fibra-cyan text-xs font-bold tracking-wide uppercase">
+            <i data-lucide="zap" class="w-3.5 h-3.5"></i> Seu site novo no ar em 48 Horas
+          </div>
+          
+          <h1 class="font-heading text-4xl sm:text-5xl font-extrabold text-white leading-tight tracking-tight">
+            Sites profissionais e de alta conversão para <span class="bg-gradient-to-r from-fibra-cyan to-fibra-purple bg-clip-text text-transparent">Provedores de Internet</span>
+          </h1>
+          
+          <p class="text-base text-fibra-textMuted font-normal leading-relaxed">
+            Escolha um modelo pré-pronto, personalizamos com a sua marca, seus planos e ERP. Aumente as vendas de fibra óptica da sua cidade com uma presença digital moderna.
+          </p>
+
+          <!-- BOTÕES HERO -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
+            <a href="#modelos" class="px-6 py-3.5 rounded-xl bg-fibra-cyan hover:bg-fibra-cyanHover text-fibra-dark font-bold text-sm shadow-xl shadow-fibra-cyan/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+              Ver Modelos Disponíveis <i data-lucide="arrow-down" class="w-4 h-4"></i>
+            </a>
+            <a href="#como-funciona" class="px-6 py-3.5 rounded-xl bg-slate-800/80 border border-slate-700 text-white font-bold text-sm hover:bg-slate-800 transition-all shadow-sm flex items-center justify-center gap-2">
+              <i data-lucide="play-circle" class="w-4 h-4 text-fibra-cyan"></i> Como Funciona
+            </a>
+          </div>
+
+          <!-- MÉTRICAS / PROVA SOCIAL -->
+          <div class="flex items-center gap-6 text-xs font-semibold text-slate-400 pt-4 border-t border-slate-800">
+            <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-fibra-cyan"></i> Integração com IXC, SGP, MK-AUTH e +</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-4 h-4 text-fibra-cyan"></i> 100% Otimizado p/ Celular</span>
+          </div>
+
+        </div>
+
+        <!-- COLUNA DIREITA: MOCKUP NAVEGADOR MODELO ISP -->
+        <div class="lg:col-span-7 relative">
+          
+          <!-- FRAME ESTILO NAVEGADOR DARK -->
+          <div class="bg-slate-900 rounded-2xl p-2.5 sm:p-3 shadow-2xl shadow-fibra-cyan/10 border border-slate-700/80">
+            
+            <!-- HEADER DO NAVEGADOR -->
+            <div class="flex items-center justify-between pb-2.5 border-b border-slate-800 px-2">
+              <div class="flex items-center gap-1.5">
+                <span class="w-3 h-3 rounded-full bg-rose-500 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500 inline-block"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500 inline-block"></span>
+              </div>
+              <div class="bg-slate-950 px-4 py-0.5 rounded-md text-[10px] text-slate-400 font-mono flex items-center gap-1.5 border border-white/5">
+                <i data-lucide="lock" class="w-3 h-3 text-fibra-cyan"></i> https://demo.wiafibra.com.br/modelo-ultra
+              </div>
+              <div class="text-[10px] text-slate-400 font-semibold flex items-center gap-1">
+                Ao Vivo <i data-lucide="external-link" class="w-3 h-3"></i>
+              </div>
+            </div>
+
+            <!-- CONTEÚDO DO SIMULADOR DE SITE ISP -->
+            <div class="bg-slate-950 rounded-xl overflow-hidden shadow-inner p-4 space-y-4 border border-slate-800/50 mt-2">
+              
+              <!-- HEADER DO MOCKUP -->
+              <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <div class="flex items-center gap-2">
+                  <div class="w-6 h-6 rounded-lg bg-fibra-cyan flex items-center justify-center text-fibra-dark font-bold text-xs"><i data-lucide="wifi" class="w-3.5 h-3.5"></i></div>
+                  <span class="font-bold text-xs text-white">VELOX FIBRA</span>
+                </div>
+                <div class="flex items-center gap-2 text-[10px]">
+                  <span class="text-slate-400 hidden sm:inline">Planos</span>
+                  <span class="text-slate-400 hidden sm:inline">Cobertura</span>
+                  <span class="bg-fibra-cyan/10 text-fibra-cyan px-2 py-1 rounded font-bold border border-fibra-cyan/30">2ª Via de Fatura</span>
+                </div>
+              </div>
+
+              <!-- HERO DO SITE SIMULADO -->
+              <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-4 rounded-xl border border-slate-800 text-center space-y-2 relative overflow-hidden">
+                <div class="text-[9px] bg-emerald-500/10 text-emerald-400 font-bold px-2 py-0.5 rounded-full inline-block border border-emerald-500/20">
+                  ⚡ Oferta de Aniversário
+                </div>
+                <h4 class="text-sm font-extrabold text-white">A Melhor Internet UltraFibra da Região</h4>
+                <p class="text-[10px] text-slate-400">Instalação Grátis + Wi-Fi 6 de Alta Performance</p>
+                
+                <!-- CARDS DE PLANOS NO MOCKUP -->
+                <div class="grid grid-cols-3 gap-2 pt-2">
+                  <div class="bg-slate-950 p-2 rounded-lg border border-slate-800 text-center">
+                    <div class="text-[9px] font-bold text-slate-400">300 MEGA</div>
+                    <div class="text-xs font-black text-fibra-cyan">R$ 79,90</div>
+                    <div class="text-[8px] bg-fibra-cyan text-fibra-dark font-bold rounded py-0.5 mt-1">Assinar</div>
+                  </div>
+
+                  <div class="bg-slate-900 p-2 rounded-lg border border-fibra-cyan text-center relative">
+                    <div class="text-[9px] font-bold text-white">600 MEGA</div>
+                    <div class="text-xs font-black text-fibra-cyan">R$ 99,90</div>
+                    <div class="text-[8px] bg-fibra-cyan text-fibra-dark font-bold rounded py-0.5 mt-1">Assinar</div>
+                  </div>
+
+                  <div class="bg-slate-950 p-2 rounded-lg border border-slate-800 text-center">
+                    <div class="text-[9px] font-bold text-slate-400">1 GIGA</div>
+                    <div class="text-xs font-black text-fibra-cyan">R$ 149,90</div>
+                    <div class="text-[8px] bg-fibra-cyan text-fibra-dark font-bold rounded py-0.5 mt-1">Assinar</div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SEÇÃO MODELOS DE SITE (CATÁLOGO COM 6 MODELOS) -->
+  <section id="modelos" class="py-20 bg-fibra-dark relative border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-fibra-cyan text-xs font-bold uppercase tracking-widest">Catálogo Próprio</span>
+        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">Escolha o Modelo Perfeito para o Seu Provedor</h2>
+        <p class="text-fibra-textMuted text-sm sm:text-base">Todos os modelos são 100% editáveis com as cores da sua logo, seus preços, WhatsApp e central do assinante.</p>
+      </div>
+
+      <!-- GRID COM OS 6 MODELOS -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- MODELO 1 -->
+        <div class="bg-fibra-cardBg rounded-3xl border border-slate-800 overflow-hidden hover:border-fibra-cyan/50 transition-all hover:shadow-2xl hover:shadow-fibra-cyan/10 group flex flex-col justify-between">
+          <div>
+            <div class="relative h-48 bg-slate-900 flex items-center justify-center p-4 border-b border-slate-800 overflow-hidden">
+              <span class="absolute top-3 left-3 bg-fibra-cyan text-fibra-dark text-[10px] font-black uppercase px-2.5 py-1 rounded-full shadow">Mais Vendido</span>
+              <div class="text-center space-y-2 group-hover:scale-105 transition-transform">
+                <i data-lucide="zap" class="w-10 h-10 text-fibra-cyan mx-auto"></i>
+                <div class="font-heading font-extrabold text-white text-lg">Modelo Turbo ISP</div>
+                <p class="text-[11px] text-slate-400">Design Dark Moderno com foco em Vendas Rápidas</p>
+              </div>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="font-heading font-bold text-lg text-white">1. Modelo Turbo ISP</h3>
+              <ul class="space-y-2 text-xs text-fibra-textMuted">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-fibra-cyan"></i> Destaque para Combos (Net + TV)</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-fibra-cyan"></i> Calculadora de Velocidade Recomendada</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-fibra-cyan"></i> Botão Flutuante de WhatsApp Direct</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0 flex gap-2">
+            <a href="https://wa.me/seu-numero?text=Quero%20ver%20a%20demo%20do%20Modelo%20Turbo%20ISP" target="_blank" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold text-center transition-colors">Demo Ao Vivo</a>
+            <a href="https://wa.me/seu-numero?text=Quero%20comprar%20o%20Modelo%20Turbo%20ISP" target="_blank" class="w-full py-2.5 rounded-xl bg-fibra-cyan hover:bg-fibra-cyanHover text-fibra-dark text-xs font-bold text-center transition-colors">Escolher</a>
+          </div>
+        </div>
+
+        <!-- MODELO 2 -->
+        <div class="bg-fibra-cardBg rounded-3xl border border-slate-800 overflow-hidden hover:border-fibra-cyan/50 transition-all hover:shadow-2xl hover:shadow-fibra-cyan/10 group flex flex-col justify-between">
+          <div>
+            <div class="relative h-48 bg-slate-900 flex items-center justify-center p-4 border-b border-slate-800 overflow-hidden">
+              <span class="absolute top-3 left-3 bg-emerald-500 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full">Clean & Clean</span>
+              <div class="text-center space-y-2 group-hover:scale-105 transition-transform">
+                <i data-lucide="globe" class="w-10 h-10 text-emerald-400 mx-auto"></i>
+                <div class="font-heading font-extrabold text-white text-lg">Modelo Fibra Clean</div>
+                <p class="text-[11px] text-slate-400">Fundo Claro e Sofisticado com Alta Leitura</p>
+              </div>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="font-heading font-bold text-lg text-white">2. Modelo Fibra Clean</h3>
+              <ul class="space-y-2 text-xs text-fibra-textMuted">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Visual leve ideal para público familiar</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Tabela Comparativa de Planos Comercial</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Seção de Teste de Velocidade Integrado</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0 flex gap-2">
+            <a href="https://wa.me/seu-numero?text=Quero%20ver%20a%20demo%20do%20Modelo%20Fibra%20Clean" target="_blank" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold text-center transition-colors">Demo Ao Vivo</a>
+            <a href="https://wa.me/seu-numero?text=Quero%20comprar%20o%20Modelo%20Fibra%20Clean" target="_blank" class="w-full py-2.5 rounded-xl bg-fibra-cyan hover:bg-fibra-cyanHover text-fibra-dark text-xs font-bold text-center transition-colors">Escolher</a>
+          </div>
+        </div>
+
+        <!-- MODELO 3 -->
+        <div class="bg-fibra-cardBg rounded-3xl border border-slate-800 overflow-hidden hover:border-fibra-cyan/50 transition-all hover:shadow-2xl hover:shadow-fibra-cyan/10 group flex flex-col justify-between">
+          <div>
+            <div class="relative h-48 bg-slate-900 flex items-center justify-center p-4 border-b border-slate-800 overflow-hidden">
+              <span class="absolute top-3 left-3 bg-purple-500 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full">Gamer / Ultra</span>
+              <div class="text-center space-y-2 group-hover:scale-105 transition-transform">
+                <i data-lucide="gamepad-2" class="w-10 h-10 text-purple-400 mx-auto"></i>
+                <div class="font-heading font-extrabold text-white text-lg">Modelo Gamer Pro</div>
+                <p class="text-[11px] text-slate-400">Focado em Baixa Latência e Ultra Velocidade</p>
+              </div>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="font-heading font-bold text-lg text-white">3. Modelo Gamer Pro</h3>
+              <ul class="space-y-2 text-xs text-fibra-textMuted">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Estilo futurista / neon de alto impacto</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Destaque para Ping Baixo e Ping Rota Gamer</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-purple-400"></i> Botões de Checkout direto no WhatsApp</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0 flex gap-2">
+            <a href="https://wa.me/seu-numero?text=Quero%20ver%20a%20demo%20do%20Modelo%20Gamer%20Pro" target="_blank" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold text-center transition-colors">Demo Ao Vivo</a>
+            <a href="https://wa.me/seu-numero?text=Quero%20comprar%20o%20Modelo%20Gamer%20Pro" target="_blank" class="w-full py-2.5 rounded-xl bg-fibra-cyan hover:bg-fibra-cyanHover text-fibra-dark text-xs font-bold text-center transition-colors">Escolher</a>
+          </div>
+        </div>
+
+        <!-- MODELO 4 -->
+        <div class="bg-fibra-cardBg rounded-3xl border border-slate-800 overflow-hidden hover:border-fibra-cyan/50 transition-all hover:shadow-2xl hover:shadow-fibra-cyan/10 group flex flex-col justify-between">
+          <div>
+            <div class="relative h-48 bg-slate-900 flex items-center justify-center p-4 border-b border-slate-800 overflow-hidden">
+              <span class="absolute top-3 left-3 bg-amber-500 text-slate-950 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">Empresarial / B2B</span>
+              <div class="text-center space-y-2 group-hover:scale-105 transition-transform">
+                <i data-lucide="building-2" class="w-10 h-10 text-amber-400 mx-auto"></i>
+                <div class="font-heading font-extrabold text-white text-lg">Modelo Corporate ISP</div>
+                <p class="text-[11px] text-slate-400">Para Provedores focados em Link Dedicado e PME</p>
+              </div>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="font-heading font-bold text-lg text-white">4. Modelo Corporate ISP</h3>
+              <ul class="space-y-2 text-xs text-fibra-textMuted">
+                <li class="flex items-center gap-2"><li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Seção dedicada para IP Fixo e SLA Garantido</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Formulário de Orçamento Corporativo</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-400"></i> Apresentação Institucional de Redes e POPs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0 flex gap-2">
+            <a href="https://wa.me/seu-numero?text=Quero%20ver%20a%20demo%20do%20Modelo%20Corporate" target="_blank" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold text-center transition-colors">Demo Ao Vivo</a>
+            <a href="https://wa.me/seu-numero?text=Quero%20comprar%20o%20Modelo%20Corporate" target="_blank" class="w-full py-2.5 rounded-xl bg-fibra-cyan hover:bg-fibra-cyanHover text-fibra-dark text-xs font-bold text-center transition-colors">Escolher</a>
+          </div>
+        </div>
+
+        <!-- MODELO 5 -->
+        <div class="bg-fibra-cardBg rounded-3xl border border-slate-800 overflow-hidden hover:border-fibra-cyan/50 transition-all hover:shadow-2xl hover:shadow-fibra-cyan/10 group flex flex-col justify-between">
+          <div>
+            <div class="relative h-48 bg-slate-900 flex items-center justify-center p-4 border-b border-slate-800 overflow-hidden">
+              <span class="absolute top-3 left-3 bg-blue-500 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full">Consulta por Bairro</span>
+              <div class="text-center space-y-2 group-hover:scale-105 transition-transform">
+                <i data-lucide="map-pin" class="w-10 h-10 text-blue-400 mx-auto"></i>
+                <div class="font-heading font-extrabold text-white text-lg">Modelo Viabilidade Map</div>
+                <p class="text-[11px] text-slate-400">Com campo de busca de CEP e Bairro na capa</p>
+              </div>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="font-heading font-bold text-lg text-white">5. Modelo Viabilidade Map</h3>
+              <ul class="space-y-2 text-xs text-fibra-textMuted">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-400"></i> Caixa de busca: "Consulte se temos Fibra na sua rua"</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-400"></i> Redirecionamento automático para consultor do bairro</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-400"></i> Captura de Leads sem cobertura</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0 flex gap-2">
+            <a href="https://wa.me/seu-numero?text=Quero%20ver%20a%20demo%20do%20Modelo%20Viabilidade" target="_blank" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold text-center transition-colors">Demo Ao Vivo</a>
+            <a href="https://wa.me/seu-numero?text=Quero%20comprar%20o%20Modelo%20Viabilidade" target="_blank" class="w-full py-2.5 rounded-xl bg-fibra-cyan hover:bg-fibra-cyanHover text-fibra-dark text-xs font-bold text-center transition-colors">Escolher</a>
+          </div>
+        </div>
+
+        <!-- MODELO 6 -->
+        <div class="bg-fibra-cardBg rounded-3xl border border-slate-800 overflow-hidden hover:border-fibra-cyan/50 transition-all hover:shadow-2xl hover:shadow-fibra-cyan/10 group flex flex-col justify-between">
+          <div>
+            <div class="relative h-48 bg-slate-900 flex items-center justify-center p-4 border-b border-slate-800 overflow-hidden">
+              <span class="absolute top-3 left-3 bg-rose-500 text-white text-[10px] font-black uppercase px-2.5 py-1 rounded-full">Landing Page Única</span>
+              <div class="text-center space-y-2 group-hover:scale-105 transition-transform">
+                <i data-lucide="target" class="w-10 h-10 text-rose-400 mx-auto"></i>
+                <div class="font-heading font-extrabold text-white text-lg">Modelo Promo Express</div>
+                <p class="text-[11px] text-slate-400">Página de Venda Direta para Anúncios (Google/FB)</p>
+              </div>
+            </div>
+            <div class="p-6 space-y-4">
+              <h3 class="font-heading font-bold text-lg text-white">6. Modelo Promo Express</h3>
+              <ul class="space-y-2 text-xs text-fibra-textMuted">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-400"></i> Foco 100% em tráfego pago e campanhas locais</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-400"></i> Cronômetro de Oferta por Tempo Limitado</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-400"></i> Máxima velocidade de carregamento (Nota 99+ Google)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="p-6 pt-0 flex gap-2">
+            <a href="https://wa.me/seu-numero?text=Quero%20ver%20a%20demo%20do%20Modelo%20Promo%20Express" target="_blank" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold text-center transition-colors">Demo Ao Vivo</a>
+            <a href="https://wa.me/seu-numero?text=Quero%20comprar%20o%20Modelo%20Promo%20Express" target="_blank" class="w-full py-2.5 rounded-xl bg-fibra-cyan hover:bg-fibra-cyanHover text-fibra-dark text-xs font-bold text-center transition-colors">Escolher</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RECURSOS ESSENCIAIS PARA PROVEDORES -->
+  <section id="recursos" class="py-20 bg-slate-950 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <h2 class="font-heading text-3xl font-bold text-white tracking-tight">Desenvolvido pensando na rotina do seu ISP</h2>
+        <p class="text-fibra-textMuted text-sm sm:text-base">Não é apenas um site bonito. É um canal de vendas e atendimento automatizado.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="bg-fibra-cardBg p-6 rounded-2xl border border-slate-800 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-fibra-cyan/10 text-fibra-cyan flex items-center justify-center font-bold">
+            <i data-lucide="link" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading font-bold text-white text-base">Atalho Central do Assinante</h3>
+          <p class="text-xs text-fibra-textMuted leading-relaxed">Botão direto para IXC, SGP, MK-AUTH, Voalle ou HubSoft na barra superior do site.</p>
+        </div>
+
+        <div class="bg-fibra-cardBg p-6 rounded-2xl border border-slate-800 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-fibra-cyan/10 text-fibra-cyan flex items-center justify-center font-bold">
+            <i data-lucide="smartphone" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading font-bold text-white text-base">Mobile First de Verdade</h3>
+          <p class="text-xs text-fibra-textMuted leading-relaxed">Mais de 80% dos clientes acessam pelo celular. Nossos sites voam no smartphone.</p>
+        </div>
+
+        <div class="bg-fibra-cardBg p-6 rounded-2xl border border-slate-800 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-fibra-cyan/10 text-fibra-cyan flex items-center justify-center font-bold">
+            <i data-lucide="message-square" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading font-bold text-white text-base">Venda Direta no WhatsApp</h3>
+          <p class="text-xs text-fibra-textMuted leading-relaxed">Ao clicar no plano, o cliente já abre o WhatsApp com a mensagem pronta: "Quero assinar o plano 500 Mega".</p>
+        </div>
+
+        <div class="bg-fibra-cardBg p-6 rounded-2xl border border-slate-800 space-y-3">
+          <div class="w-10 h-10 rounded-xl bg-fibra-cyan/10 text-fibra-cyan flex items-center justify-center font-bold">
+            <i data-lucide="search" class="w-5 h-5"></i>
+          </div>
+          <h3 class="font-heading font-bold text-white text-base">SEO Local Configurado</h3>
+          <p class="text-xs text-fibra-textMuted leading-relaxed">Sua empresa no topo do Google quando alguém pesquisar "Internet fibra em [Sua Cidade]".</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PASSO A PASSO (COMO FUNCIONA) -->
+  <section id="como-funciona" class="py-20 bg-fibra-dark border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+        <span class="text-fibra-cyan text-xs font-bold uppercase tracking-widest">Sem Burocracia</span>
+        <h2 class="font-heading text-3xl font-bold text-white">Como ter o seu site no ar em 3 passos</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        
+        <div class="bg-fibra-cardBg p-8 rounded-3xl border border-slate-800 space-y-4 relative">
+          <div class="w-12 h-12 rounded-full bg-fibra-cyan text-fibra-dark font-black text-lg flex items-center justify-center mx-auto">1</div>
+          <h3 class="font-heading font-bold text-lg text-white">Escolha o Modelo</h3>
+          <p class="text-xs text-fibra-textMuted leading-relaxed">Navegue pelas demonstrações ao vivo e escolha o design que mais combina com a estratégia do seu provedor.</p>
+        </div>
+
+        <div class="bg-fibra-cardBg p-8 rounded-3xl border border-slate-800 space-y-4 relative">
+          <div class="w-12 h-12 rounded-full bg-fibra-cyan text-fibra-dark font-black text-lg flex items-center justify-center mx-auto">2</div>
+          <h3 class="font-heading font-bold text-lg text-white">Envie os Dados</h3>
+          <p class="text-xs text-fibra-textMuted leading-relaxed">Nos envie sua logomarca, os valores dos seus planos e o link da sua central do assinante via formulário rápido.</p>
+        </div>
+
+        <div class="bg-fibra-cardBg p-8 rounded-3xl border border-slate-800 space-y-4 relative">
+          <div class="w-12 h-12 rounded-full bg-fibra-cyan text-fibra-dark font-black text-lg flex items-center justify-center mx-auto">3</div>
+          <h3 class="font-heading font-bold text-lg text-white">Site Publicado!</h3>
+          <p class="text-xs text-fibra-textMuted leading-relaxed">Em até 48 horas configuramos o seu domínio próprio (.com.br) com certificado SSL de segurança grátis.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BANNER FINAL DE VENDAS -->
+  <section class="py-16 bg-gradient-to-r from-slate-900 via-fibra-dark to-slate-900 border-t border-slate-800 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6 relative z-10">
+      <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Pronto para colocar o seu provedor em outro nível?</h2>
+      <p class="text-fibra-textMuted text-sm sm:text-base max-w-xl mx-auto">Fale diretamente com nosso consultor no WhatsApp e receba a demonstração no seu celular agora mesmo.</p>
+      <div>
+        <a href="https://wa.me/seu-numero?text=Ola!%20Quero%20escolher%20um%20modelo%20de%20site%20para%20meu%20provedor" target="_blank" class="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-fibra-cyan hover:bg-fibra-cyanHover text-fibra-dark font-extrabold text-base shadow-xl shadow-fibra-cyan/20 transition-all transform hover:-translate-y-0.5">
+          <i data-lucide="message-circle" class="w-5 h-5 fill-current"></i> Escolher Meu Modelo no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="bg-slate-950 text-slate-500 text-xs py-12 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center gap-3">
+        <div class="w-7 h-7 rounded-lg bg-fibra-cyan flex items-center justify-center text-fibra-dark font-bold">
+          <i data-lucide="wifi" class="w-4 h-4"></i>
+        </div>
+        <span class="font-heading font-bold text-sm text-white">WiaFibra</span>
+        <span class="text-slate-800">|</span>
+        <span>© 2026 WiaFibra. Soluções Web para Provedores de Internet.</span>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <a href="#" class="hover:text-white transition-colors">Modelos</a>
+        <a href="#" class="hover:text-white transition-colors">Termos</a>
+        <a href="https://wa.me/seu-numero" target="_blank" class="hover:text-white transition-colors">Suporte</a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- INICIALIZADOR DOS ÍCONES LUCIDE -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      lucide.createIcons();
+    });
+  </script>
+</body>
+</html>
